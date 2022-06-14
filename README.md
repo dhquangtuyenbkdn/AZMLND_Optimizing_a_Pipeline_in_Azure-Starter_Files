@@ -38,7 +38,7 @@ This model is then compared to an Azure AutoML run.
     5: Research report with Best run model
 
 **What are the benefits of the parameter sampler you chose?**
-    - RandomParameterSampling(
+    - RandomParameterSampling( //Refer from https://github.com/abhiojha8/Optimizing_ML_Pipeline_Azure
         {
             '--C' : choice(0.001,0.01,0.1,1,10,100),
             '--max_iter': choice(50,100,200)
@@ -57,9 +57,8 @@ This model is then compared to an Azure AutoML run.
     3: Config AutoML with parameters:
         - Experiment timeout for each child jobs
         - AutoML run with classification algorithm with Accuracy primary metric
-        - Dataset was load at (1) for train data model with forcus 'Loan' label
+        - Dataset was load at (1) for train data model with 'y' label
         - And 5 cross validations to perform when validation data is not specified.
-
         
         
     4: Submit AutoML to Experiment to train model
